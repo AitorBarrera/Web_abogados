@@ -34,23 +34,23 @@
         </ul>
       </nav>
       <div class="container align-items-center h-100">
-      <div class="hero-content">
-        <p>
-          <span class="highlight">ABOGADOS ALEMANES</span> CON SEDE EN VALENCIA,
-          ESPAÑA
-        </p>
-        <h1>Sus derechos, nuestro compromiso</h1>
-        <p>
-          Maziul y asociados es un despacho de abogados alemanes y españoles con
-          sede en Valencia.Ofrecemos asesoramiento legal para asuntos
-          internacionales y locales.
-        </p>
-        <div class="hero-buttons">
-          <a href="#" class="btn primary">Contacta con nosotros</a
-          ><a href="#" class="btn secondary">Casos de éxito</a>
+        <div class="hero-content">
+          <p>
+            <span class="highlight">ABOGADOS ALEMANES</span> CON SEDE EN VALENCIA,
+            ESPAÑA
+          </p>
+          <h1>Sus derechos, nuestro compromiso</h1>
+          <p>
+            Maziul y asociados es un despacho de abogados alemanes y españoles con
+            sede en Valencia.Ofrecemos asesoramiento legal para asuntos
+            internacionales y locales.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn primary">Contacta con nosotros</a
+            ><a href="#" class="btn secondary"Casos de éxito</a>
+          </div>
         </div>
       </div>
-    </div>
     </header>
 
     <!-- About Section -->
@@ -98,7 +98,9 @@
           Bienvenido a nuestro despacho de abogados trilingüe Donde la excelencia
           jurídica en alemán, español e inglés está en casa.
         </h3>
-        <a href="#" class="btn secondary">CONOCENOS</a>
+        <div class="contenedorBoton">
+          <a href="#" class="btn secondary">CONOCENOS</a>
+        </div>
       </div>
       <div class="team-members">
         <p>Nuestros abogados altamente cualificados le ofrecen confianza basada en 
@@ -125,55 +127,54 @@
 
     <!-- Testimonials Section -->
     <section class="testimonials">
+      <div class="container">
       <h3>Lo que nuestros clientes dicen de nosotros:</h3>
       <div class="testimonials-container">
         <blockquote>
           <p>
-            "Contraté a Maziul & Asociados para un caso complicado de propiedad
-            intelectual."
+            “Contraté a Maziul & Asociados para un caso complicado de propiedad intelectual. El equipo, liderado por el abogado Maziul & Asociados, demostró un conocimiento impresionante de la ley alemana. Su enfoque estratégico y profesionalismo resultaron en una resolución exitosa.”
           </p>
           <footer>- Pepita Suarez</footer>
         </blockquote>
         <blockquote>
           <p>
-            "Maziul & Asociados manejó mi caso de divorcio de manera
-            excepcional."
+            "Maziul & Asociados manejó mi caso de divorcio de manera excepcional. El abogado Schneider proporcionó orientación experta y atención personalizada. Gracias a su enfoque eficiente, logramos resultados positivos rápidamente. ¡Confío plenamente en Maziul & Asociados para cualquier asunto legal!" 
           </p>
           <footer>- Juan Perez</footer>
         </blockquote>
         <blockquote>
-          <p>"Mi experiencia con Klaus fue extraordinaria."</p>
+          <p>Mi experiencia con Klaus fue extraordinaria. El abogado y su equipo abordaron mi caso de accidente laboral con profesionalismo y dedicación. Su comprensión sólida de la ley alemana condujo a resultados exitosos. Recomiendo encarecidamente los servicios de Maziul & Asociados para asuntos legales confiables y eficaces.</p>
           <footer>- Ana Blanca</footer>
         </blockquote>
       </div>
+    </div>
     </section>
 
     <!-- Contact Form Section -->
     <section class="contact-form">
       <h3>Consulta gratuita</h3>
       <p>
-        Programar una consulta es fácil. Llámenos directamente o complete el
-        formulario en línea.
+        Programar una consulta es fácil. Puede llamarnos directamente al número proporcionado en nuestro sitio web o 
+        completar el formulario de contacto en línea. 
       </p>
       <form action="#" method="POST">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" />
-        <label for="surname">Apellidos</label>
-        <input type="text" id="surname" name="surname" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-        <label for="subject">Título</label>
-        <input type="text" id="subject" name="subject" />
-        <label for="message">Motivo de consulta</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit" class="btn primary">Enviar</button>
+        <div class="form-grid">
+          <input type="text" id="name" name="name" placeholder="Nombre"/>
+          <input type="text" id="surname" name="surname" placeholder="Apellidos"/>
+          <input type="email" id="email" name="email" placeholder="Email"/>
+          <input type="text" id="telefono" name="telefono" placeho  lder="Tlf."/>
+          <textarea id="message" name="message" rows="7" placeholder="Motivo de consulta"></textarea>
+          <button type="submit" class="btn primary" value="Enviar">Enviar</button>
+        </div> 
       </form>
     </section>
 
     <!-- Location Section -->
     <section class="location">
-      <h3>Dónde encontrarnos</h3>
-      <p>C/ Barcas 31, Valencia CP. 46005</p>
+      <div class="text">
+        <h3>Dónde encontrarnos</h3>
+        <p>C/ Barcas 31, Valencia CP. 46005</p>
+      </div>
       <div class="map">
         <!-- Embed Google Maps iframe or similar -->
         <iframe src="https://www.google.com/maps/embed?..."></iframe>
