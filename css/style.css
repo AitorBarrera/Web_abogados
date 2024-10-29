@@ -67,9 +67,9 @@
     color: var(--basics-white);
 }
 
-body{
-    max-width: 1440px;
-}
+/* body{
+    max-width: 1440px; 
+} */
 
 .hero{
     width: 100%;
@@ -328,6 +328,12 @@ section.team{
     display: flex;
     flex-direction: column;
 }
+
+.team .texto h3{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+}
+
 .team h3{
     color: var(--basics-black);
     font-size: var(--size-h3);
@@ -357,7 +363,7 @@ section.team{
 
 .team .team-members p{
     color: var(--basics-black);
-    margin: 50px 0;
+    margin: 30px 0;
     font-size: 1.5rem;
 }
 
@@ -497,9 +503,127 @@ section.team{
     color: var(--basics-black);
     grid-row: 4;
     grid-column: 11 / 12;
+    border: 0;
 }
 
 .location{
    width: var(--width-container);
-   margin: var(--margin-center); 
+   margin: var(--margin-center);
+   padding: 3rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.location .text h3, .location .text p{
+    color: var(--basics-black);
+}
+
+.location .text h3{
+    font-family: var(--font-family-recklessNeue);
+    font-weight: 100;
+    font-size: var(--size-h3);
+    margin-bottom: 3rem;
+}
+
+.location .text p{
+    font-size: 1.2rem;
+}
+
+.location .map{
+    width: 70%;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+footer.footer {
+    background-color: var(--primary-secciones-1);
+    height: 17rem;
+}
+
+footer.footer > div{
+    display: flex;
+    justify-content: space-between;
+
+    width: var(--width-container);
+    margin: var(--margin-center);
+    padding: 2rem;
+
+    height: 100%;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.footer-nav li{
+    margin-top: 1.6rem;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+    width: 25%;
+}
+
+.social-media{
+    margin: var(--margin-center);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.newsletter{
+    width: 20%;
+    margin-top: 1.3rem;
+}
+
+.newsletter h4{
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.newsletter input{
+    height: 2.5rem;
+    width: 100%;
+    color: var(--basics-black);
+    padding: 1rem 0.5rem;
+}
+
+.newsletter button{
+    padding: 12px 25px;
+    width: 30%;
+
+    text-transform: uppercase;
+
+    font-size: var(--size-button-text);
+    font-weight: bolder;
+
+    color: var(--basics-white--basics-black);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+
+    margin-top: 1rem;
 }
