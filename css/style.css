@@ -219,8 +219,8 @@ header nav{
 
 .wrapper {
     /* max-width: 940px; */
-    margin: 0 auto;
-    width: 90%;
+    margin: var(--margin-center);
+    width: var(--width-container);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
@@ -626,4 +626,113 @@ footer.footer > div{
     border-radius: 25px;
 
     margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .hero-buttons .btn{
+        text-align: center;
+    }
+    .hero-content .secondary{
+        margin: 1rem 0;
+    }
+    
+    .wrapper{
+        display: block;
+    }
+
+    .services .contenido{
+        width: var(--width-container);
+    }
+
+    section.team{
+        display: block;
+    }
+
+    .contenedorBoton{
+        margin: 2rem 0;
+    }
+
+    .team .team-members{
+        padding: 1.5rem 2rem 0 2rem;
+    }
+
+    .testimonials h3{
+        width: var(--width-container);
+    }
+
+    .testimonials-container{
+        display: block;
+    }
+
+    .testimonials blockquote{
+        width: var(--width-container);
+        margin: 2rem 0;
+    }
+
+    .contact-form p{
+        width: var(--width-container);
+        margin: var(--margin-center);
+        margin: 2rem 0;
+    }
+
+    .contact-form .form-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location{
+        display: block;
+        padding: 0;
+    }
+
+    .location .text h3{
+        margin: 0;
+    }
+
+    .location .text p{
+        margin: 2rem 0;
+    }
+
+    .location .map{
+        width: 100%;
+        margin: var(--margin-center);
+    }
+
+    footer.footer{
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    footer.footer > div{
+        display: block;
+    }
+
+    .footer-info{
+        flex-direction: row;
+
+    }
+
+    .footer-nav h4{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .footer-nav ul{
+        flex-direction: row;
+        align-items: start;
+    }
+     
+    .footer-logo{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
 }
