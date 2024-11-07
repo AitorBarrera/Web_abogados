@@ -718,11 +718,16 @@ footer.footer > div{
         justify-content: space-between;
     }
 
+    .logo{
+        width: 100%;
+    }
+
     .logo > figure{
-        margin: 0;
+        width: 100%;
+        margin: 1rem 0;
         display: flex;
+        justify-content: center;
         align-items: center;
-        width: 1rem;
     }
 
     ul.nav-links{
@@ -772,7 +777,7 @@ footer.footer > div{
     }
 
     .hero-content h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-content{
@@ -782,7 +787,7 @@ footer.footer > div{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .hero-buttons{
