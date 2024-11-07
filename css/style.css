@@ -234,6 +234,7 @@ header nav{
     /* max-width: 940px; */
     margin: var(--margin-center);
     width: var(--width-container);
+    position: relative  ;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
@@ -246,6 +247,26 @@ header nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: var(--size-h2);
+    font-family: var(--font-family-recklessNeue);
+    position: relative;
+}
+
+.one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+  }
+
+.one h2 {
+    font-size: var(--size-h2);
+    font-family: var(--font-family-recklessNeue);
+    font-weight: 100;
 }
 
 .two {
@@ -254,11 +275,7 @@ header nav{
 
 .two img{
     width: 100%;
-}
-
-.about h2{
-    font-size: var(--size-h2);
-    font-family: var(--font-family-recklessNeue);
+    border-radius: 10.625px;
 }
 
 .about p{
@@ -329,13 +346,25 @@ section.team{
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 5px;
+    gap: 25px;
     align-items: center;
 
     color: var(--basics-black);
 }
 
+.team .texto::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+}
+
 .team .texto{
+    position: relative;
     grid-column: 1 / 4;
     height: 100%;
     display: flex;
@@ -343,19 +372,20 @@ section.team{
 }
 
 .team .texto h3{
-    font-size: 2.5rem;
-    padding: 0.5rem;
+    font-size: 1.9rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
 }
 
 .team h3{
     color: var(--basics-black);
-    font-size: var(--size-h3);
+    font-size: 1rem;
     font-family: var(--font-family-recklessNeue);
     font-weight: 100;
 }
 
 .contenedorBoton{
-    margin: 10rem 0;
+    margin: 3rem 0;
 }
 
 .team .btn{
@@ -369,7 +399,7 @@ section.team{
 
 .team .team-members{
     grid-column: 4 / 13;
-    padding: 0 3rem;
+    padding: 0 2rem;
     border-radius: var(--radius-button-radius);
     background-color: var(--secondary-secciones-2);
 }
@@ -414,7 +444,21 @@ section.team{
 
 .testimonials{
    background-color: var(--primary-secciones-1); 
-   padding: 2rem;
+   padding: 2rem 0;
+}
+.testimonials .container h3{
+    position: relative;
+    padding: 1rem 0;
+}
+.testimonials .container h3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #126F8D; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
 }
 
 .testimonials h3{
@@ -444,28 +488,41 @@ section.team{
     color: var(--basics-black);
 }
 
-.contact-form{
-    width: var(--width-container);
-    margin: var(--margin-center);
-    padding: 3rem 0;
+.contact-form::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
 }
 
-.contact-form h3, 
-.contact-form p,
-.contact-form label{
+.contact-form{
+    width: var(--width-container);
+    margin: 3rem auto;
+    position: relative;
+}
+
+.contact-form h3{
     color: var(--basics-black);
+    padding-top: 1rem;
+}
+
+.contact-form p{
+    color: var(--basics-black);
+    padding: 1rem 0 2rem 0;
 }
 
 .contact-form h3{
     font-size: var(--size-h3);
     font-family: var(--font-family-recklessNeue);
     font-weight: 100;
-    margin-bottom: 1.5rem;
 }
 
 .contact-form p{
     width:  50%;
-    margin-bottom: 3rem;
 }
 
 .contact-form .form-grid{
@@ -522,7 +579,7 @@ section.team{
 .location{
    width: var(--width-container);
    margin: var(--margin-center);
-   padding: 3rem;
+   padding: 3rem 0;
    display: flex;
    justify-content: space-between;
 }
@@ -531,15 +588,28 @@ section.team{
     color: var(--basics-black);
 }
 
+.location .text h3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+}
+
 .location .text h3{
     font-family: var(--font-family-recklessNeue);
     font-weight: 100;
     font-size: var(--size-h3);
-    margin-bottom: 3rem;
+    padding: 1rem 0 3rem 0;
+    position: relative;
 }
 
 .location .text p{
     font-size: 1.2rem;
+    width: 60%;
 }
 
 .location .map{
@@ -561,7 +631,7 @@ footer.footer > div{
 
     width: var(--width-container);
     margin: var(--margin-center);
-    padding: 2rem;
+    padding: 2rem 0;
 
     height: 100%;
 }
@@ -602,7 +672,7 @@ footer.footer > div{
 }
 
 .newsletter{
-    width: 20%;
+    width: 25%;
     margin-top: 1.3rem;
 }
 
@@ -618,15 +688,15 @@ footer.footer > div{
 }
 
 .newsletter input{
-    height: 2.5rem;
+    height: 2rem;
     width: 100%;
     color: var(--basics-black);
     padding: 1rem 0.5rem;
 }
 
 .newsletter button{
-    padding: 12px 25px;
-    width: 30%;
+    padding: 10px;
+    width: 50%;
 
     text-transform: uppercase;
 
